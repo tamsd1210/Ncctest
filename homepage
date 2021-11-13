@@ -4,96 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="newsstyles.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>News Application</title>
+    <title>Homepage</title>
     
     <style>
 
     * {
         box-sizing: border-box;
         }
-        #container {padding: 5px;}
-      
-      li {display: inline;
-            padding: 8px;}
-      
-      .left {float: left;
-               width: "35%";
-               padding: 0px;}
         
-      .right {float: right;
-               width: "65%";}
+      .container {
+        width: 100%;
+        text-align: center;
         
-      #banner {position: relative; width: "100%";}
+      }
+      .container-left {
+        width: 20%;
+        float: left;
+        border: 1px solid;
+        }
+        
+      .container-right {
+        width: 80%;
+        float: left;
+        border: 1px solid;
+        }
+        
+      .row {
+        width: 80%;
+        border: 1px solid;
+      }
       
-      #main {
-             padding: 0px 0px 0px 15px;
-             }
+      .col-12 {
+        width: 100%;
+      }
       
-      #imglist {
-              padding: 10px 10px 10px 15px;}
-      
-      #footer {
-              padding: 10px 10px 10px 15px;
-              }
+      .col-4 {
+        width: 33.33%;
+        float: left;
+      }
+             
       .row:after {content: "";
                   display: table;
                   clear: both;}
-    
-              
-
-
-
+      
+      .footer {
+        width: 100%;
+        padding: 10px 10px 10px 15px;
+        border: 1px solid;
+        }
+        
     </style>
-
-
 </head>
 <body>
 
-<!--Logo -->
-<div class="container">
-    <div class="col-12">
-      <img src = "pasted image 0 (1).png"  style = "width:30%; border-radius: 5px">
+<!-- Nav -->
+
+<div class = "container">
+    <div class = "container-left">
+          <a href = "#">Home</a><br>
+          <a href = "#">Services</a><br>
+          <a href = "#">News</a><br>
+          <a href = "#">Blog</a><br>
+          <a href = "#">Contact</a>
     </div>
-    
-    <div class="col-sm-12 text-center">
-        <div style = "width: 200px; height: 100px; border: 1px solid">
-            <p >Some text</p>
+
+
+    <!--Logo -->
+    <div class="container-right">
+        <div class="col-12">
+            <img src = "pasted image 0 (1).png"  style = "width:30%; border-radius: 5px">
         </div>
-      </div>
 
+        <div class="col-12">
+            <div style = "width: 200px; height: 100px; border: 1px solid">
+                <p >Some text</p>
+            </div>
+        </div>
 
-  <div id="footer" class="row">
-    <div class="col-sm-4">
+  <div class="row">
+    <div class="col-4">
         <h3>Some text</h3>
         <p>some text</p>
-        
     </div>
 
-    <div class="col-s-4">
+    <div class="col-4">
         <h3>Some text</h3>
         <p>some text</p>
-        
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-4">
         <h3>Some text</h3>
         <p>some text</p>
-       
     </div>
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="col-sm-12 text-center">
+<div class="footer">
+    <div class="col-12">
         <p>Copyright</p>
-      
+    </div>
 </div>
+</div>
+
+
 
 </body>
 </html>

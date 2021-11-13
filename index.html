@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    width: 100%;
+}
+
+.col1 {
+    width: 20%;
+    float: left;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.col2 {
+    width: 80%;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #f1f1f1;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+p {
+    padding: 0px 20px 20px 20px;
+}
+
+.box2 {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.box2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-4 {
+    width: 33.33%;
+    float: left;
+    text-align: left;
+}
+
+.box3 {
+    width: 100%;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class = "row">
+    <div class = "col1">
+        <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Servies</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+    </div>
+
+    <div class = "col2">
+        <div>
+            <img src = "pasted image 0 (1).png"  style = "width:30%; ">
+        </div>
+ 
+        <div class = "box1">
+            <h3 style = "padding: 10px 20px 0px 20px">London is the capital city of England.</h3>
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+          
+        <div class = "box2">
+            <div class = "col-4">
+                <h3>London is the capital city of England.</h3>
+                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+            </div>
+          
+            <div class="col-4">
+                <h3>London is the capital city of England.</h3>
+                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+            </div>
+          
+            <div class="col-4">
+                <h3>London is the capital city of England.</h3>
+                <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+            </div>
+        </div>
+        <hr>
+        <div class = "box3">
+            <p>Copyright</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

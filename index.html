@@ -15,18 +15,38 @@ body {
 }
 
 .row {
-    width: 100%;
+  width: 90%;
+  height: 650px;
+  margin: auto;
 }
 
 .col1 {
     width: 20%;
+    height: 650px;
     float: left;
     border: 1px solid black;
     background-color: black;
 }
 
+ ul {
+   width: 200px;
+   background-color: #000;
+  }
+  
+  li a {
+   display: block;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  li a:hover {
+    background-color: #fff;
+    color: #00cc00;
+  }
+
 .col2 {
     width: 80%;
+    height: 650px;
     float: left;
     border: 1px solid black;
     text-align: center;
@@ -38,7 +58,7 @@ body {
 }
 
 p {
-    padding: 0px 20px 20px 20px;
+    padding-left: 20px;
 }
 
 .box2 {
@@ -63,15 +83,14 @@ p {
     padding: 10px;
 }
   
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .col1, .col2, .col-4 {
     width: 100%;
+    height: auto;
   }
-
 </style>
 </head>
 <body>
-
 
 <div class = "row">
     <div class = "col1">

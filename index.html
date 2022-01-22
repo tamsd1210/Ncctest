@@ -8,48 +8,34 @@
 <style>
 * {
   box-sizing: border-box;
-}
-
+  }
 body {
-  font-family: Arial;
-}
-
-.row {
-  width: 90%;
-  height: 650px;
-  margin: auto;
   margin-top: 20px;
-  border: 1px solid #f1f1f1;
-}
-
-.col1 {
-    width: 20%;
-    height: 650px;
-    float: left;
-    border: 1px solid black;
-    background-color: black;
-}
-
- ul {
-   width: 150px;
-   background-color: #000;
+  font-family: Arial;
   }
-  
-  li a {
+.sidebar {
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+  }
+.sidebar a {
    display: block;
-    color: #fff;
-    padding: 10px;
+   color: #fff;
+   padding: 10px;
   }
-  
-  li a:hover {
-    background-color: #fff;
-    color: #00cc00;
+ .sidebar a:active {
+   background-color: #04AA6D;
+   color: #fff;
+  }
+.sidebar a:hover:not(.active) {
+   background-color: #555;
+   color: #fff;
   }
 
-.col2 {
-    width: 80%;
+.col {
     height: 650px;
-    float: left;
     border: 1px solid black;
     text-align: center;
     padding-left: 40px;
@@ -88,26 +74,37 @@ p {
 }
   
 @media only screen and (max-width: 768px) {
-  .row, .col1, .col2, .col-4 {
+  .sidebar {
     width: 100%;
     height: auto;
+    position: relative;
+   .sidebar a {
+     float: left;
+    }
+    div.col {
+      margin-left: 0;
+    }
+  }
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    }
   }
 </style>
 </head>
 <body>
+  
+  <div class="sidebar">
+    <a class="active" href="#home>Home</a>
+    <a href="#services">Services</a>
+    <a href="#news">News</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-<div class = "row">
-    <div class = "col1">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Servies</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-    </div>
 
-    <div class = "col2">
+    <div class = "col">
         <div>
             <img src = "logo.png"  style = "width:30%; ">
         </div>
@@ -138,7 +135,6 @@ p {
             <p>Copyright &copy; 2021</p>
         </div>
     </div>
-</div>
 
 </body>
 </html>
